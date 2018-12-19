@@ -44,7 +44,21 @@ namespace TP_GuessMyNumber
 
             while (attempt != answer)
             {
-                Console.WriteLine("Trouvez le bon numéro entre 1 et 50 !");
+                if (attempts == 0)
+                {
+                    Console.WriteLine("Trouvez le bon numéro entre 1 et 50 !");
+                }
+                else
+                {
+                    if (attempt < answer)
+                    {
+                        Console.WriteLine("C'est plus !");
+                    }
+                    else
+                    {
+                        Console.WriteLine("C'est moins !");
+                    }
+                }
                 attempt = int.Parse(Console.ReadLine());
                 attempts++;
             }
