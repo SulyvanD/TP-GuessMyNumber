@@ -38,7 +38,7 @@ namespace TP_GuessMyNumber
                         break;
                     }
 
-                    Console.WriteLine("On à dit entre 1 et 50 !!");
+                    Console.WriteLine("On a dit entre 1 et 50 !!");
                 }
             }
 
